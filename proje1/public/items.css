@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+
+    background: url(arkaplan.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    position: fixed; 
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+    
+}
+
+.container .navbar{
+
+    width: 100%;
+    height: 90px;
+    background: rgba(21, 34, 49, 0.4)
+
+}
+
+.navbar .logo{
+    display:inline-block;
+
+margin-left: 50px;
+margin-top:  30px;
+
+}
+
+.navbar .logo a {
+text-decoration: none ;
+font-size: 30px;
+font-family: sans-serif;
+color: white;
+
+}
+
+
+.navbar ul{
+
+float: right;
+
+margin-right: 20px;
+
+}
+
+.navbar ul li{
+
+    list-style:none;
+    display:inline-block;
+    margin: 40px;
+    line-height: 10px;
+
+}
+
+.navbar ul li a{
+
+color: white;
+text-decoration: none;
+font-size : 20px;
+padding:6px 13px;
+transition: .5s;
+
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+
+    background-color: orange;
+    border-radius: 2px;
+
+}
+
+.boyutlandirma img {
+    
+    margin-top: 70px;
+    margin-left: 165px;
+    cursor: pointer;
+    max-width: 300px;
+    height: auto;
+    border-radius: 300px;
+    outline: none;
+    width: 10%;
+    
+    
+    
+    }
+
+    .boyutlandirma :hover{
+        transform: scale(2.2);
+        border-radius: 2px;
+        transition: .5s;
+
+    }
+
+   
+.boyutlandirma button{
+
+margin: 50px 300px;
+
+
+
+}
+
+   

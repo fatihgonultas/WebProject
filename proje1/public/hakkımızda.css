@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+
+    background: url(arkaplan6.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    position: fixed; 
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+    
+}
+
+.container .navbar{
+
+    width: 100%;
+    height: 90px;
+    background: rgba(21, 34, 49, 0.4)
+
+}
+
+.navbar .logo{
+    display:inline-block;
+
+margin-left: 50px;
+margin-top:  30px;
+
+}
+
+.navbar .logo a {
+text-decoration: none ;
+font-size: 30px;
+font-family: sans-serif;
+color: white;
+
+}
+
+
+.navbar ul{
+
+float: right;
+
+margin-right: 20px;
+
+}
+
+.navbar ul li{
+
+    list-style:none;
+    display:inline-block;
+    margin: 40px;
+    line-height: 10px;
+
+}
+
+.navbar ul li a{
+
+color: white;
+text-decoration: none;
+font-size : 20px;
+padding:6px 13px;
+transition: .5s;
+
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+
+    background-color: orange;
+    border-radius: 2px;
+
+}
+
+.container .baslık{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: azure;
+font-size: 50px;
+}
+
+.container .text{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: bisque;
+
+
+}
+
+.container .baslık2{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: azure;
+font-size: 50px;
+
+}
+
+.container .text2{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: bisque;
+
+
+}
+
+.container .baslık3{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: azure;
+font-size: 50px;
+
+}
+
+.container .text3{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: bisque;
+
+
+}

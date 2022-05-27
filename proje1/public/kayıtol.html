@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head> 
+<html lang="tr">    
+     <meta charset="utf-8">
+     <meta name ="viewport" content="width=device-width, inital-scale=1.0"> 
+     <title>CSGO ITEMS TRADE </title>
+     <link rel ="stylesheet" href="kayitol.css">
+     <script src="C:\Users\Fatih\Desktop\İnternet Programlama/denemeler.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        
+        var baslik = document.title;
+        var yeniBaslik = "Dont Forget Us:)";
+
+        window.onblur = function(){
+            document.title = yeniBaslik;
+        }
+
+        window.onfocus = function()
+        {
+            document.title = baslik;
+        }
+
+
+        const grs = () => {
+            const http = new XMLHttpRequest();
+            const url = "http://localhost:4000/api/auth"
+            http.open("POST", url);
+            http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            email = document.getElementById("grsemail").value;
+            password = document.getElementById("grspassword").value;
+
+            console.log(email, password);
+
+            let json = JSON.stringify({
+                "email" : email,
+                "password": password
+            });
+
+            http.send(json);
+
+            //if(http.responseText)
+            http.onreadystatechange = (e) => {
+                console.log(http.responseText);
+
+                if(http.status == "200") {
+                    alert(" Giris basarili");
+                    document.querySelector("#dg").close();
+                }else {
+                    alert("giris basarisiz!")
+                }
+            }
+        }
+        
+        const kyt = () => {
+            const http = new XMLHttpRequest();
+            const url = "http://localhost:4000/api/users"
+            http.open("POST", url);
+            http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+
+            name = document.getElementById("name").value;
+            email = document.getElementById("email").value;
+            password = document.getElementById("password").value;
+
+            console.log(name, email, password);
+
+            let json = JSON.stringify({
+                "name" : name,
+                "email": email,
+                "password": password
+            });
+
+            http.send(json);
+
+            //if(http.responseText)
+            http.onreadystatechange = (e) => {
+                console.log(http.responseText);
+
+                if(http.status == "200") {
+                    alert(" Kayit basarili");
+                    document.querySelector("#dg2").close();
+                }else {
+                    alert("kayit basarisiz!")
+                }
+            }
+        }
+
+
+    </script>
+
+<link rel="shortcut icon" href="C:\Users\Fatih\Desktop\İnternet Programlama\Kodlar ve Fotoğraflar/site.ico">
+
+
+          </head>
+
+          <body>
+            <div class="container">
+               <div class="navbar">
+                 <div class="logo">
+                   
+                   <a href ="test.html"><img src="C:\Users\Fatih\Desktop\İnternet Programlama\Kodlar ve Fotoğraflar\logo.png" alt="" width="140px" height="50px"></a>
+       
+             </div>
+             <ul>
+                <li> <a href = "test.html"> Ana Sayfa  </a> </li> 
+                <li> <a href = "İtemler.html"> İtemler </a> </li>
+                <li> <a href = "deneme.html"> Satın AL </a></li> 
+                <li> <a href = "hakkımızda.html "> Hakkımızda </a> </li> 
+                <li> <a href = "kayitol.html"> Kaydol Ve Giriş Yap </a> </li> 
+       
+             </ul>
+               </div>
+               
+               
+       
+       
+       </body>
+       </html>
+       
+       <script src="" async defer></script>
+       <script src="JavaScript/kayıtol.js"></script>
+       <div style="right: 1100px; position:fixed;">
+        <div style="top: 400px; position:fixed;">
+           <button id="ac">Giriş yap!</button>
+           <button id="ac2">Kayıt Ol!</button>
+       </div>
+
+       <dialog id="dg">
+           <h2>Giriş Yap!</h2>
+           <form action="">
+               <p>
+                   <input type="text" id="grsemail">
+               </p>
+               <p>
+                   <input type="password" id="grspassword">
+               </p>
+               <p>
+                   <input
+                       id="grsy"
+                       type="button"
+                       value=" Giriş Yap!"
+                       onclick="grs()"
+                   >
+                   <button id="kapat">Kapat!</button>
+               </p>
+           </form>
+       </dialog>
+
+
+       <dialog id="dg2">
+        <h2>Kayıt Ol!</h2>
+        <form action="">
+            <p>
+                <input type="text" id="name">
+            </p>
+            <p>
+                <input type="password" id="password">
+            </p>
+            <p>
+                <input type="email" id="email">
+            </p>
+            <p>
+                <input
+                    id="kyto"
+                    type="button"
+                    value="Kayıt Ol!"
+                    onclick="kyt()"
+                >
+                <button id="kapat2">Kapat!</button>
+            </p>
+        </form>
+    </dialog>
+
+
+    <script>
+      
+
+        var modal = document.querySelector("#dg");
+        var modal2 = document.querySelector("#dg2");
+    
+        document.querySelector("#ac").onclick=function(){
+            modal.showModal()
+            return false;
+        }
+        document.querySelector("#ac2").onclick=function(){
+            modal2.showModal()
+            return false;
+        }
+        document.querySelector("#kapat").onclick=function(){
+            modal.close();
+            return false;
+        
+        }
+        document.querySelector("#kapat2").onclick=function(){
+            modal2.close();
+            return false;
+        }
+    </script>
+    <script>
+
+        
